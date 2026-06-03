@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    width: 100%;
+    height:100%;
+}
+
+ .main_box{
+
+        position: absolute;
+        top: 40%;
+        width: 100vw;
+        min-height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        
+
+
+}
+
+.color_background{
+
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.color_name{
+
+font-family: monospace;
+font-size: 1rem;
+font-weight: bold;
+
+
+}
+
+h1 , #btn{
+
+       position: absolute;
+         left: 42%;
+         top: 26%;
+}
+
+h1{
+
+           font-family: monospace;
+        font-size: 2.2rem;
+       font-weight: bold;
+}
+
+
+#btn{
+
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: monospace;
+    font-weight: bold;
+    top: 50%;
+    left: 60%;
+
+}
