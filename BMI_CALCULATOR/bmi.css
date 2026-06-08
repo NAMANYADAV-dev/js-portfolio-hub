@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Taki padding size kharab na kare */
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 100vh;
+   width: 100vw;
+}
+
+#container, #answer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Height auto karne se buttons andar fit rahenge */
+    min-height: 350px;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Dono headings ke liye common class */
+.main-heading {
+    font-size: 1.9rem; 
+    font-weight: bold;
+    color: black;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.input_box {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.input_box label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-right: 1rem;
+}
+
+#height, #weight {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+    font-size: 1rem;
+    width: 180px;
+}
+
+/* Dono buttons ko center me lane ka sahi tarika */
+#btn, #btn-1 {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: rgba(0, 191, 255, 0.841);
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#btn:hover, #btn-1:hover {
+    background-color: #0099cc;
+}
+
+#waiting {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #087cf7;
+}
+
+#waiting_1 {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #087cf7;
+}
