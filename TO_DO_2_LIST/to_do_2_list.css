@@ -1,0 +1,154 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    padding:20px;
+}
+
+/* Heading */
+body::before{
+    content:"TO-DO LIST";
+    font-size:2.5rem;
+    font-weight:700;
+    color:white;
+    margin-bottom:30px;
+    letter-spacing:2px;
+}
+
+/* Input */
+#to_do_list{
+    width:400px;
+    max-width:90%;
+    padding:15px 20px;
+    border:none;
+    border-radius:12px;
+    outline:none;
+    font-size:1rem;
+    background:white;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    margin-bottom:15px;
+}
+
+/* Button */
+#btn{
+    width:200px;
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    background:#00c896;
+    color:white;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+    margin-bottom:25px;
+}
+
+#btn:hover{
+    transform:translateY(-3px);
+    background:#00a67d;
+}
+
+/* Task List */
+#list{
+    width:450px;
+    max-width:95%;
+    list-style:none;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    border-radius:15px;
+    padding:20px;
+}
+
+/* Dynamic JS Tasks */
+#list li{
+    background:white;
+    margin:10px 0;
+    padding:15px;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-weight:500;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+#list li:hover{
+    transform:scale(1.02);
+}
+
+/* Responsive */
+@media(max-width:500px){
+
+    body::before{
+        font-size:2rem;
+    }
+
+    #to_do_list{
+        width:100%;
+    }
+
+    #btn{
+        width:100%;
+    }
+
+    #list{
+        width:100%;
+    }
+}
+
+
+#list li button{
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:600;
+    transition:0.3s ease;
+    margin-left:10px;
+}
+
+/* Delete Button */
+.delete-btn{
+    background:#ff4d4d;
+    color:white;
+}
+
+.delete-btn:hover{
+    background:#e63939;
+    transform:translateY(-2px);
+}
+
+/* Mark Complete Button */
+.mark-btn{
+    background:#3b82f6;
+    color:white;
+}
+
+.mark-btn:hover{
+    background:#2563eb;
+    transform:translateY(-2px);
+}
+
+/* Completed Task */
+.completed{
+    text-decoration:line-through;
+    opacity:0.7;
+    background:#d1fae5 !important;
+}
